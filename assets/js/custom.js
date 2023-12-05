@@ -130,8 +130,8 @@
 				$("#message").text("Message Sent!");
 
 				setInterval(function() {
+					$("#contactform").find(".output_message").removeClass("success");
 					$("#message").text("");
-					$("#message").hide("");
 				}, 5000);
 			} catch (error) {
 				console.log(error);
